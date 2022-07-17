@@ -57,7 +57,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage("WebCage", `${user.username} has left the room`)
+        formatMessage("talk.io", `${user.username} has left the room`)
       );
 
       // Current active users and room name
